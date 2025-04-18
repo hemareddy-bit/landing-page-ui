@@ -1,0 +1,343 @@
+/* =====================
+   Reset & Base Styles
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom right, #8f95f3, #3998f0);
+}
+
+/* =====================
+   Header
+===================== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #032347, #759eeb);
+    color: white;
+    height: 100px;
+}
+
+.header .logo img {
+    width: 150px;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.header nav ul li {
+    margin: 0 12px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #021738;
+}
+
+/* =====================
+   Hero Section
+===================== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom right, #ffffff, #f1f1f1);
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 50%;
+    animation: fadeIn 2s ease-out;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.hero .cta-button {
+    background-color: #17184b;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.hero .cta-button:hover {
+    background-color: #448dfc;
+    transform: translateY(-2px);
+}
+
+.hero-img {
+    width: 45%;
+    animation: fadeIn 2s ease-out;
+}
+
+/* =====================
+   Key Features
+===================== */
+.features {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 2s ease-out;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+/* =====================
+   Testimonials
+===================== */
+.testimonials {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.testimonial {
+    max-width: 400px;
+    margin: 0 auto 30px;
+}
+
+.testimonial img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #448dfc;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial h4 {
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* =====================
+   Pricing Section
+===================== */
+.pricing {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-card {
+    background: linear-gradient(135deg, #17184b, #448dfc);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    width: 220px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-card h3 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.pricing-card p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* =====================
+   Call to Action
+===================== */
+.cta {
+    background: linear-gradient(to right, #141e30, #243b55);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.cta .cta-button {
+    background-color: #141e30;
+    padding: 14px 36px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta .cta-button:hover {
+    background-color: #448dfc;
+    transform: scale(1.05);
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+    background: linear-gradient(to right, #032347, #759eeb);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: #448dfc;
+}
+
+/* =====================
+   Animations
+===================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================
+   Responsive Design
+===================== */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content,
+    .hero-img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-img {
+        margin-top: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .feature-cards,
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+    }
+}
